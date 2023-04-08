@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+   font-family: 'Mukta', sans-serif;
+    
+ }
+ 
+  body {
+   background-image: url(./pexels-olia-danilevich-5466809.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+ } 
+ 
+ table{
+     border: 1px solid transparent;
+     border-collapse: collapse;
+     border-radius: 20px;
+     box-shadow: 0 0 16px white;
+     border-spacing:0;
+     color:white;
+     /* margin-left: 25px; */
+     background-color: rgb(29, 25, 25);
+ }
+ td{
+     border: 1px solid transparent;
+     border-left:2px solid red;
+     border-bottom:2px solid red;
+     text-align: center;
+     padding: 5px;
+ }
+ 
+ .wrapper{
+     margin-left: 35%;
+     
+ 
+ }
+ .wall{
+     min-height: 10px;
+     height:auto;
+     width:auto;
+     border-radius: 10px;
+     border:1px solid transparent;
+   
+ }
+ 
+ button {
+     text-align: center;
+     padding:10px 15px;
+     margin: 0px;
+     background-color: white;
+     color: black;
+     box-shadow: 0 0 2px #000;
+     border: 1px solid transparent;
+     font-size: medium;
+ 
+ }
+ 
+ button:hover{
+     background-color: orangered;
+     transition: 0.3s linear;
+     transform: scale(0.97);
+     box-shadow:  0 0 9px #000, 0 0 14px #000;
+     cursor: grab;
+ }
+ 
+ input[type="number"]{
+     margin-left:px;
+     padding: 0 15px;
+     height: 39px;
+ 
+  
+ }
+ input[type="number"]:hover{
+     background-color: rgb(224, 213, 213);
+     color:thick black;
+     caret-color:red;
+     cursor: grab;
+ 
+ }
+ h2{
+     color: black;
+ }
+ 
+ .input{
+     margin-left:50px;
+ }
