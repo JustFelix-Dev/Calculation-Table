@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
    font-family: 'Mukta', sans-serif;
-    
  }
  
   body {
-   background-image: url(./pexels-olia-danilevich-5466809.jpg);
+   background-image: url(./backgroundImage.webp);
+   min-height: 96vh;
    background-position: center;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -13,41 +13,60 @@
  } 
  
  table{
-     border: 1px solid transparent;
      border-collapse: collapse;
-     border-radius: 20px;
      box-shadow: 0 0 16px white;
      border-spacing:0;
      color:white;
-     /* margin-left: 25px; */
+     user-select: none;
      background-color: rgb(29, 25, 25);
  }
  td{
      border: 1px solid transparent;
      border-left:2px solid red;
+     border-right: 2px solid red;
      border-bottom:2px solid red;
      text-align: center;
      padding: 5px;
  }
  
  .wrapper{
-     margin-left: 35%;
-     
- 
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+ }
+
+ .mybuttons{
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+    
  }
  .wall{
-     min-height: 10px;
-     height:auto;
-     width:auto;
-     border-radius: 10px;
-     border:1px solid transparent;
+    height: 450px;
+    width:90%;
+    overflow: auto;
+    margin: 0 auto;
+    border:1px solid transparent;
    
+ }
+ .wall::-webkit-scrollbar{
+    width: .3rem;
+    height: .3rem;
+ }
+ .wall::-webkit-scrollbar-track{
+    background: whitesmoke;
+    border-radius: 20px;
+ }
+ .wall::-webkit-scrollbar-thumb{
+    background-color: rgb(175, 8, 8);
+    cursor: grab;
+    border-radius: 20px;
+
  }
  
  button {
      text-align: center;
      padding:10px 15px;
-     margin: 0px;
      background-color: white;
      color: black;
      box-shadow: 0 0 2px #000;
@@ -57,7 +76,7 @@
  }
  
  button:hover{
-     background-color: orangered;
+    background-color: rgb(175, 8, 8);
      transition: 0.3s linear;
      transform: scale(0.97);
      box-shadow:  0 0 9px #000, 0 0 14px #000;
@@ -65,12 +84,11 @@
  }
  
  input[type="number"]{
-     margin-left:px;
-     padding: 0 15px;
-     height: 39px;
- 
-  
- }
+    height: 2.5rem; 
+    padding: .3rem 1rem;
+    margin-bottom: .5rem;
+    }
+
  input[type="number"]:hover{
      background-color: rgb(224, 213, 213);
      color:thick black;
@@ -81,7 +99,35 @@
  h2{
      color: black;
  }
- 
- .input{
-     margin-left:50px;
+
+ @media screen and (max-width:980px){
+    input[type="number"]{
+        height: 2rem;
+    }
+    button{
+        padding: 6px 10px;
+    }
  }
+
+ @media screen and (max-width:600px){
+    input[type="number"]{
+        height: 1.9rem;
+    }
+    button{
+        padding: 4px 9px;
+    }
+ }
+ @media screen and (max-width:460px){
+    .mybuttons{
+        flex-direction: column;
+    }
+    button{
+        border-radius: 0 !important;
+    }
+    input{
+        border-radius: 0 !important;
+    }
+ }
+
+ 
+ 
